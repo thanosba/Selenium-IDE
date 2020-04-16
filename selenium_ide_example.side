@@ -1,0 +1,183 @@
+{
+  "id": "53cf9072-4c90-4f49-800e-8937fdf0a2e3",
+  "version": "2.0",
+  "name": "selenium_ide_example",
+  "url": "https://www.selenium.dev/selenium-ide/",
+  "tests": [{
+    "id": "99ba29bb-94dc-46df-9916-ec88cd7705c9",
+    "name": "TC_P01",
+    "commands": [{
+      "id": "793f97d7-af5f-4e69-a55d-71790f6af407",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2907740-1221-4d75-8bf0-513d6eda8e25",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a23c0c-8458-41ea-84f0-412320646390",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inner > .projectTitle",
+      "targets": [
+        ["css=.inner > .projectTitle", "css:finder"],
+        ["xpath=//div/h2", "xpath:position"]
+      ],
+      "value": "Selenium IDE\\nOpen source record and playback test automation for the web"
+    }, {
+      "id": "c6caedee-5cdf-4a77-a0d0-2ca196d7cbb0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=small",
+      "targets": [
+        ["css=small", "css:finder"],
+        ["xpath=//small", "xpath:position"],
+        ["xpath=//small[contains(.,'Open source record and playback test automation for the web')]", "xpath:innerText"]
+      ],
+      "value": "Open source record and playback test automation for the web"
+    }, {
+      "id": "a02c0d7e-d46e-4af7-b39c-797bc7d31585",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.productShowcaseSection > h2",
+      "targets": [
+        ["css=.productShowcaseSection > h2", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Ready to use IDE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca89c6c-6a49-4979-8e6b-ecf9886b77b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.productShowcaseSection p",
+      "targets": [
+        ["css=.productShowcaseSection p", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Getting started with Selenium IDE requires no additional setup other than installing the extension on your browser. One of our driving philosophies is to provide an easy to use tool that will give instant feedback. We believe that the easier we can make it, the more likely people are to author tests, which in turn results in better tested apps.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ab3f99-c9cb-4136-b3e0-0e5c3da8788f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Selenium IDE · Open source record and playback test automation for the web",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "68e63ac9-d4c6-44cb-86d7-99f7844d2e5e",
+    "name": "TC_P02",
+    "commands": [{
+      "id": "20be59fe-1c8d-4985-8774-2fbb423b976a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e88fe30d-8d61-49c5-a4fa-19006f2bf2d6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.alignCenter:nth-child(1) h2 p",
+      "targets": [
+        ["css=.alignCenter:nth-child(1) h2 p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Web Ready')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1adc5df2-1c1e-4890-b0db-658a1dc921d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.blockElement:nth-child(2) h2 p",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "324c71b3-01b6-4142-a5d9-c375694c9dd3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.blockElement:nth-child(3) > .blockContent > div p",
+      "targets": [],
+      "value": "Run your tests on any browser/OS combination in parallel using the Command-line Runner for Selenium IDE."
+    }, {
+      "id": "bd505c52-7795-49d4-8b9c-ed868e84498f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.productShowcaseSection > h2",
+      "targets": [
+        ["css=.productShowcaseSection > h2", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Ready to use IDE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "81c38294-4fdb-49d1-b7da-9a08e2a3165a",
+    "name": "TC_N01",
+    "commands": [{
+      "id": "43154fa3-2efc-4f28-b7e7-dc6a53de462f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1b8409b-f9e4-48f5-a7a3-e0eeeec19f19",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.blockElement:nth-child(2) > blockContent > div p",
+      "targets": [
+        ["css=.blockElement:nth-child(2) > .blockContent > div p", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Enjoy easier test debugging with rich IDE features like setting breakpoints and pausing on exceptions.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8d102efd-49f7-4f9b-b0df-e693a3e92f93",
+    "name": "TC_N02",
+    "commands": [{
+      "id": "849a1cc0-90c4-49b5-bea5-d64692717cee",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9892a8bb-cefd-464b-a238-73b0918f4cb8",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.container:nth-child(5) blockContent > div p",
+      "targets": [
+        ["css=.container:nth-child(5) .blockContent > div p", "css:finder"],
+        ["xpath=//div[5]/div/div/div/div[2]/div/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Selenium IDE ships with an extensive control flow structure, with available commands like if, while and times. To learn more, check out the Control Flow documentation.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "df0f5102-d702-4323-befa-8630b79e6646",
+    "name": "TS_01",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["99ba29bb-94dc-46df-9916-ec88cd7705c9", "68e63ac9-d4c6-44cb-86d7-99f7844d2e5e"]
+  }, {
+    "id": "e7f45f37-c6cb-4f17-a5cb-b3a72b704103",
+    "name": "TS_02",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["81c38294-4fdb-49d1-b7da-9a08e2a3165a", "8d102efd-49f7-4f9b-b0df-e693a3e92f93"]
+  }],
+  "urls": ["https://www.selenium.dev/selenium-ide/", "http://www.selenium.dev/selenium-ide/"],
+  "plugins": []
+}
